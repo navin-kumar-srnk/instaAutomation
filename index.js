@@ -33,9 +33,9 @@ const iPhone = puppeteer.devices['iPhone 10'];
     // await pg.screenshot({path:'test.png'})
     ///give credentials
     await delay(500)
-    await pg.type('[name="username"]', '_na_vin')
+    await pg.type('[name="username"]', 'username')
     await delay(100)
-    await pg.type('[name="password"]', 'Navin@navin12345')
+    await pg.type('[name="password"]', 'password')
     await delay(100)
     await pg.click('[type="submit"]')
     await delay(100)
